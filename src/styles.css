@@ -1,0 +1,225 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+  --font-display: "Inter", system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+/* ============================================
+   LIGHT MODE — default, Apple/Vercel premium
+   ============================================ */
+:root {
+  --radius: 0.875rem;
+
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.13 0 0);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.13 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.13 0 0);
+
+  --primary: oklch(0.13 0 0);
+  --primary-foreground: oklch(0.99 0 0);
+
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.13 0 0);
+
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+
+  --accent: oklch(0.94 0 0);
+  --accent-foreground: oklch(0.13 0 0);
+
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0 0 0 / 0.08);
+  --input: oklch(0 0 0 / 0.06);
+  --ring: oklch(0.13 0 0 / 0.3);
+
+  --glass-bg: oklch(1 0 0 / 0.65);
+  --glass-border: oklch(0 0 0 / 0.06);
+  --glass-shadow:
+    0 1px 0 oklch(1 0 0 / 0.8) inset,
+    0 1px 2px oklch(0 0 0 / 0.04),
+    0 20px 60px oklch(0 0 0 / 0.08);
+
+  --gradient-header: linear-gradient(180deg, oklch(0.18 0 0) 0%, oklch(0.08 0 0) 100%);
+
+  /* Modern mesh background — soft pastel blobs over neutral */
+  --bg-mesh:
+    radial-gradient(ellipse 70% 50% at 15% 0%, oklch(0.88 0.08 270 / 0.55) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 10%, oklch(0.92 0.06 30 / 0.5) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, oklch(0.88 0.07 200 / 0.45) 0%, transparent 60%),
+    linear-gradient(180deg, oklch(0.99 0 0) 0%, oklch(0.97 0 0) 100%);
+
+  --bg-grid:
+    linear-gradient(oklch(0 0 0 / 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0 0 0 / 0.025) 1px, transparent 1px);
+
+  --gradient-text: linear-gradient(180deg, oklch(0.15 0 0) 0%, oklch(0.4 0 0) 100%);
+
+  --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.04), 0 4px 12px oklch(0 0 0 / 0.04);
+  --shadow-elevated: 0 1px 0 oklch(1 0 0 / 0.6) inset, 0 10px 30px oklch(0 0 0 / 0.08), 0 30px 80px oklch(0 0 0 / 0.06);
+  --shadow-glow: 0 0 0 1px oklch(0 0 0 / 0.08), 0 8px 32px oklch(0 0 0 / 0.1);
+
+  --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================
+   DARK MODE — Apple × Vercel pure monochrome
+   ============================================ */
+.dark {
+  --background: oklch(0.06 0 0);
+  --foreground: oklch(0.985 0 0);
+
+  --card: oklch(0.10 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.10 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.10 0 0);
+
+  --secondary: oklch(0.16 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+
+  --muted: oklch(0.14 0 0);
+  --muted-foreground: oklch(0.62 0 0);
+
+  --accent: oklch(0.18 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+
+  --destructive: oklch(0.62 0.20 25);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  --border: oklch(1 0 0 / 0.08);
+  --input: oklch(1 0 0 / 0.06);
+  --ring: oklch(0.985 0 0 / 0.4);
+
+  --glass-bg: oklch(0.10 0 0 / 0.55);
+  --glass-border: oklch(1 0 0 / 0.08);
+  --glass-shadow: 0 1px 0 oklch(1 0 0 / 0.05) inset, 0 20px 60px oklch(0 0 0 / 0.6);
+
+  --bg-mesh:
+    radial-gradient(ellipse 70% 50% at 15% 0%, oklch(0.25 0.08 270 / 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 10%, oklch(0.22 0.08 30 / 0.35) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, oklch(0.22 0.06 200 / 0.3) 0%, transparent 60%),
+    linear-gradient(180deg, oklch(0.06 0 0) 0%, oklch(0.04 0 0) 100%);
+
+  --bg-grid:
+    linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px);
+
+  --gradient-text: linear-gradient(180deg, oklch(1 0 0) 0%, oklch(0.65 0 0) 100%);
+
+  --shadow-soft: 0 1px 0 oklch(1 0 0 / 0.04) inset, 0 1px 2px oklch(0 0 0 / 0.3);
+  --shadow-elevated: 0 1px 0 oklch(1 0 0 / 0.06) inset, 0 20px 50px oklch(0 0 0 / 0.5);
+  --shadow-glow: 0 0 0 1px oklch(1 0 0 / 0.1), 0 8px 32px oklch(0 0 0 / 0.4);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+  body {
+    font-family: var(--font-sans);
+    background-image: var(--bg-mesh), var(--bg-grid);
+    background-size: auto, 40px 40px, 40px 40px, auto;
+    background-attachment: fixed;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv11", "ss01", "ss03";
+    letter-spacing: -0.011em;
+  }
+  h1, h2, h3, h4 {
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+  .glass-subtle {
+    background: color-mix(in oklab, var(--foreground) 3%, transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid color-mix(in oklab, var(--foreground) 6%, transparent);
+  }
+  .gradient-header { background: var(--gradient-header); }
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .font-mono { font-family: var(--font-mono); }
+  .font-display { font-family: var(--font-display); letter-spacing: -0.03em; }
+
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  .hairline { border-color: color-mix(in oklab, var(--foreground) 8%, transparent); }
+
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { scrollbar-width: none; }
+
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animate-fade-in-up { animation: fade-in-up 0.6s var(--transition-smooth) both; }
+  .animate-fade-in { animation: fade-in 0.4s var(--transition-smooth) both; }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+}
