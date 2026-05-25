@@ -1,0 +1,216 @@
+{
+  "/home/ibrahim/Téléchargements/facturio/src/styles.css": {
+    "file": "assets/styles-D6utC756.css",
+    "src": "/home/ibrahim/Téléchargements/facturio/src/styles.css"
+  },
+  "_ThemeToggle-BZFNumPv.js": {
+    "file": "assets/ThemeToggle-BZFNumPv.js",
+    "name": "ThemeToggle",
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "_app.editor._id-B-tGmoC7.js": {
+    "file": "assets/app.editor._id-B-tGmoC7.js",
+    "name": "app.editor._id",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_router-Cr9f9ArS.js",
+      "_invoice-types-DqROAFIU.js",
+      "_button-DodBI157.js",
+      "_createLucideIcon-hkZg55hz.js",
+      "_arrow-left-CGna1T7O.js",
+      "_stamp-meq3I0eE.js",
+      "_ThemeToggle-BZFNumPv.js"
+    ],
+    "dynamicImports": [
+      "node_modules/html2canvas/dist/html2canvas.esm.js",
+      "node_modules/dompurify/dist/purify.es.mjs",
+      "node_modules/canvg/lib/index.es.js"
+    ]
+  },
+  "_arrow-left-CGna1T7O.js": {
+    "file": "assets/arrow-left-CGna1T7O.js",
+    "name": "arrow-left",
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_router-Cr9f9ArS.js",
+      "_button-DodBI157.js",
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "_button-DodBI157.js": {
+    "file": "assets/button-DodBI157.js",
+    "name": "button",
+    "imports": [
+      "_server-yV66q4WE.js"
+    ]
+  },
+  "_createLucideIcon-hkZg55hz.js": {
+    "file": "assets/createLucideIcon-hkZg55hz.js",
+    "name": "createLucideIcon",
+    "imports": [
+      "_server-yV66q4WE.js"
+    ]
+  },
+  "_file-text-CBITuEeC.js": {
+    "file": "assets/file-text-CBITuEeC.js",
+    "name": "file-text",
+    "imports": [
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "_invoice-types-DqROAFIU.js": {
+    "file": "assets/invoice-types-DqROAFIU.js",
+    "name": "invoice-types",
+    "imports": [
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "_router-Cr9f9ArS.js": {
+    "file": "assets/router-Cr9f9ArS.js",
+    "name": "router",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js"
+    ],
+    "dynamicImports": [
+      "src/routes/auth.tsx?tsr-split=component",
+      "src/routes/app.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component",
+      "_app.editor._id-B-tGmoC7.js"
+    ],
+    "assets": [
+      "assets/styles-D6utC756.css"
+    ]
+  },
+  "_server-yV66q4WE.js": {
+    "file": "assets/server-yV66q4WE.js",
+    "name": "server",
+    "isDynamicEntry": true,
+    "dynamicImports": [
+      "tanstack-start-manifest:v",
+      "_router-Cr9f9ArS.js",
+      "src/start.ts",
+      "node_modules/@tanstack/start-server-core/dist/esm/empty-plugin-adapters.js"
+    ]
+  },
+  "_stamp-meq3I0eE.js": {
+    "file": "assets/stamp-meq3I0eE.js",
+    "name": "stamp",
+    "imports": [
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "_worker-entry-xnnvRA2h.js": {
+    "file": "assets/worker-entry-xnnvRA2h.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      "_server-yV66q4WE.js"
+    ]
+  },
+  "node_modules/@tanstack/start-server-core/dist/esm/empty-plugin-adapters.js": {
+    "file": "assets/empty-plugin-adapters-BFgPZ6_d.js",
+    "name": "empty-plugin-adapters",
+    "src": "node_modules/@tanstack/start-server-core/dist/esm/empty-plugin-adapters.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/canvg/lib/index.es.js": {
+    "file": "assets/index.es-DmmewWmf.js",
+    "name": "index.es",
+    "src": "node_modules/canvg/lib/index.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_app.editor._id-B-tGmoC7.js",
+      "_router-Cr9f9ArS.js",
+      "_invoice-types-DqROAFIU.js",
+      "_createLucideIcon-hkZg55hz.js",
+      "_button-DodBI157.js",
+      "_arrow-left-CGna1T7O.js",
+      "_stamp-meq3I0eE.js",
+      "_ThemeToggle-BZFNumPv.js"
+    ]
+  },
+  "node_modules/dompurify/dist/purify.es.mjs": {
+    "file": "assets/purify.es-BLN0kh4W.js",
+    "name": "purify.es",
+    "src": "node_modules/dompurify/dist/purify.es.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/html2canvas/dist/html2canvas.esm.js": {
+    "file": "assets/html2canvas.esm-C17pzFXx.js",
+    "name": "html2canvas.esm",
+    "src": "node_modules/html2canvas/dist/html2canvas.esm.js",
+    "isDynamicEntry": true
+  },
+  "src/routes/app.tsx?tsr-split=component": {
+    "file": "assets/app-DMHKPSZo.js",
+    "name": "app",
+    "src": "src/routes/app.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_router-Cr9f9ArS.js",
+      "_button-DodBI157.js",
+      "_ThemeToggle-BZFNumPv.js",
+      "_invoice-types-DqROAFIU.js",
+      "_file-text-CBITuEeC.js",
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "src/routes/auth.tsx?tsr-split=component": {
+    "file": "assets/auth-CdjfspM2.js",
+    "name": "auth",
+    "src": "src/routes/auth.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_router-Cr9f9ArS.js",
+      "_button-DodBI157.js",
+      "_arrow-left-CGna1T7O.js",
+      "_createLucideIcon-hkZg55hz.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-DiIBt7h-.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_router-Cr9f9ArS.js",
+      "_ThemeToggle-BZFNumPv.js",
+      "_file-text-CBITuEeC.js",
+      "_createLucideIcon-hkZg55hz.js",
+      "_stamp-meq3I0eE.js"
+    ]
+  },
+  "src/start.ts": {
+    "file": "assets/start-CBT1l6YB.js",
+    "name": "start",
+    "src": "src/start.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-yV66q4WE.js",
+      "_worker-entry-xnnvRA2h.js"
+    ]
+  },
+  "tanstack-start-manifest:v": {
+    "file": "assets/_tanstack-start-manifest_v-DmvTETvX.js",
+    "name": "_tanstack-start-manifest_v",
+    "src": "tanstack-start-manifest:v",
+    "isDynamicEntry": true
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-xnnvRA2h.js"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+# Netlify SPA fallback for TanStack Router
+# Rewrites all non-file requests to the SPA entry.
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = true
+
